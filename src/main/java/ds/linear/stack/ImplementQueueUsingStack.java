@@ -18,7 +18,6 @@ public class ImplementQueueUsingStack {
         System.out.println(queue.poll());       // Should return 10
         System.out.println(queue.poll());
         System.out.println(queue.poll());
-        ;
         System.out.println(queue.poll());
         System.out.println(queue.poll());
         System.out.println(queue.poll());        // Should return 60
