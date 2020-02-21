@@ -1,5 +1,4 @@
-# DS
-Data Structures
-1)  Arrays
-b)  Linked List
-c)  BST
+# Data Structures
+- Arrays
+- Linked List
+- BST
