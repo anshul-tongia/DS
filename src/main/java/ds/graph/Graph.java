@@ -85,13 +85,17 @@ public class Graph {
     private void bfs(String start) {
         Queue<String> queue = new LinkedList<>();
         Set<String> seen = new HashSet<>();
+        // Add to start
         queue.offer(start);
         while (!queue.isEmpty()) {
+            // Pull a Vertex
             String curr = queue.poll();
+            // Process only if it is not seen / visited.
             if (!seen.contains(curr)) {
                 seen.add(curr);
                 System.out.print(curr + " ");
             }
+            // Add Unseen Vertices
             if (vertices.get(curr) != null) {
                 for (String adj : vertices.get(curr)) {
                     if (!seen.contains(adj)) {
