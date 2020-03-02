@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class TrappingRainWater {
 
     public static void main(String[] args) {
-        System.out.println("Maximum Rain Water that could be trapped is => " + trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
+        System.out.println("Maximum Rain Water that could be trapped is => " + trap(new int[]{2, 0, 2}));
     }
 
     public static int trap(int[] height) {
@@ -31,7 +31,7 @@ public class TrappingRainWater {
 
         // Generate rightMax Array from End to Start ( where end is last element of height [height.length - 1])
         rightMax[height.length - 1] = height[height.length - 1];
-        for (int i = height.length - 2; i > 0; i--) {
+        for (int i = height.length - 2; i >= 0; i--) {
             if (height[i] > rightMax[i + 1])
                 rightMax[i] = height[i];
             else
