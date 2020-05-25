@@ -1,4 +1,2 @@
 # Data Structures
-- Arrays
-- Linked List
-- BST
+- Sliding Window Problems
